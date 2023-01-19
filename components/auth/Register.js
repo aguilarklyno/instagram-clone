@@ -14,19 +14,26 @@ export class Register extends Component {
       password: " ",
       name: " ",
     }
-    this.onSignUp = this.onSignUp.bind(this)
+    this.onSignUp = this.onSignUp.bind(this) // onSignUpをcluss Componet の外と接続する。
   }
 
   onSignUp(){
     const { email, password, name } = this.state;
     firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then((result) => {
-      console.log(result)
-    })
-    .catch((error) => {
-      console.log(error)
-    })
+      .then((result) => {
+        firebase.firestore().collection("users")
+        .doc(firebase.auth().currentUser.uid)
+        .set({
+          userName: name,
+          email: email
+        })
+        console.log(result)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
   }
+  // onSignUp関数：受け取った「email, password」を使ってcreateUserWithEmailAndPasswordでforebaseに登録する。
 
   render() {
     return (
