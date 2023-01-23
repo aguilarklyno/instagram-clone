@@ -6281,7 +6281,12 @@
     "object-assign" "^4.1.1"
     "react-is" "^16.12.0 || ^17.0.0 || ^18.0.0"
 
-"react@*", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0", "react@^18.2.0", "react@>=16.0", "react@>=17.0.0", "react@18.1.0":
+"react-thunk@^1.0.0":
+  "integrity" "sha512-OhJ0AdnFASwN4qkQ62X2xCkVPPAKM12Ju7H8jxPt6q9gTwhIRlWuzlbg0RZqYPQ88MX/s5VEvYiTImBMJWspPQ=="
+  "resolved" "https://registry.npmjs.org/react-thunk/-/react-thunk-1.0.0.tgz"
+  "version" "1.0.0"
+
+"react@*", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0", "react@^18.2.0", "react@>=16.0", "react@>=17.0.0", "react@~0.14.0 || ^15.0.0", "react@18.1.0":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"
